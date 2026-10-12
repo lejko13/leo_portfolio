@@ -156,7 +156,7 @@ export default function CTASection() {
               </Field>
 
               <p className="text-[12px] leading-[1.5] text-ink-2">
-                {f.gdpr} <a href="#" className="text-link hover:underline">{f.gdprLink}</a>.
+                {f.gdpr} <a href="/gdpr" target="_blank" rel="noopener" className="text-link hover:underline">{f.gdprLink}</a>.
               </p>
 
               <button type="submit" disabled={sending} className="btn-primary w-full py-3.5 text-[17px] disabled:opacity-60">

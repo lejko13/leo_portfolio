@@ -8,6 +8,7 @@ import { lazy, Suspense } from 'react';
 const ProjectDetail = lazy(() => import('./pages/ProjectDetail'));
 const ServiceDetail = lazy(() => import('./pages/ServiceDetail'));
 const ProjectsPage = lazy(() => import('./pages/ProjectsPage'));
+const GdprPage = lazy(() => import('./pages/GdprPage'));
 
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
@@ -32,6 +33,7 @@ const AppRoutes = () => {
 
       <Route path="/" element={<Home />} />
       <Route path="/projects" element={<ProjectsPage />} />
+      <Route path="/gdpr" element={<GdprPage />} />
       <Route path="/sluzby/:id" element={<ServiceDetail />} />
       <Route path="/:id" element={<ProjectDetail />} />
 
