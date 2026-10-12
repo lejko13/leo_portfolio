@@ -155,7 +155,7 @@ export default function Navbar() {
                           key={code}
                           onClick={() => { switchLang(code); setLangOpen(false); }}
                           className={`w-full text-left px-3 py-2 rounded-xl text-[13px] transition-colors ${
-                            lang === code ? 'text-[#e3000f] bg-[#e3000f]/10' : 'text-ink hover:bg-black/5'
+                            lang === code ? 'text-[#000000] bg-[#000000]/10' : 'text-ink hover:bg-black/5'
                           }`}
                         >
                           <span className="font-semibold mr-2">{code}</span>
@@ -170,7 +170,7 @@ export default function Navbar() {
               <button
                 onClick={handleKontaktClick}
                 onMouseEnter={() => setServicesOpen(false)}
-                className="rounded-full bg-[#e3000f] hover:bg-[#f01a28] text-white text-[12px] px-3.5 py-[5px] transition-colors"
+                className="rounded-full bg-[#000000] hover:bg-[#333333] text-white text-[12px] px-3.5 py-[5px] transition-colors"
               >
                 {sc(t.nav.cta)}
               </button>
@@ -179,7 +179,7 @@ export default function Navbar() {
             {/* Mobile toggle */}
             <button
               aria-label="Menu"
-              className="lg:hidden text-ink/80 hover:text-ink -mr-1 p-1 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-[#e3000f]/40"
+              className="lg:hidden text-ink/80 hover:text-ink -mr-1 p-1 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-[#000000]/40"
               onClick={() => setMobileOpen(!mobileOpen)}
             >
               {mobileOpen ? <X className="w-5 h-5" strokeWidth={1.6} /> : <Menu className="w-5 h-5" strokeWidth={1.6} />}
@@ -214,7 +214,7 @@ export default function Navbar() {
                             onClick={() => setServicesOpen(false)}
                             className="group inline-flex items-baseline gap-3"
                           >
-                            <span className="font-heading font-semibold text-[24px] leading-[1.25] tracking-[-0.02em] text-ink group-hover:text-[#d70015] transition-colors">
+                            <span className="font-heading font-semibold text-[24px] leading-[1.25] tracking-[-0.02em] text-ink group-hover:text-[#000000] transition-colors">
                               {service.label}
                             </span>
                             <span className="text-[12px] text-ink-3 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -228,10 +228,10 @@ export default function Navbar() {
                   <div className="min-w-[200px]">
                     <div className="text-[12px] text-ink-2 mb-4">{ui(lang, 'more')}</div>
                     <div className="flex flex-col gap-2.5 text-[12px] font-semibold text-ink">
-                      <Link to="/projects" onClick={() => setServicesOpen(false)} className="hover:text-[#d70015]">
+                      <Link to="/projects" onClick={() => setServicesOpen(false)} className="hover:text-[#000000]">
                         {sc(t.nav.projects)}
                       </Link>
-                      <button onClick={() => { setServicesOpen(false); handleKontaktClick(); }} className="text-left hover:text-[#d70015]">
+                      <button onClick={() => { setServicesOpen(false); handleKontaktClick(); }} className="text-left hover:text-[#000000]">
                         {sc(t.nav.contact)}
                       </button>
                     </div>
