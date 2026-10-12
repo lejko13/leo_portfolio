@@ -41,7 +41,7 @@ export default function FAQ() {
                   aria-expanded={open}
                   className="w-full flex items-center justify-between gap-6 py-6 text-left group"
                 >
-                  <span className="font-heading font-semibold text-[19px] md:text-[21px] leading-[1.3] tracking-[-0.015em] text-ink group-hover:text-[#0066cc] transition-colors">
+                  <span className="font-heading font-semibold text-[19px] md:text-[21px] leading-[1.3] tracking-[-0.015em] text-ink group-hover:text-[#d70015] transition-colors">
                     {faq.question}
                   </span>
                   <Plus

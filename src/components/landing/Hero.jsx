@@ -88,7 +88,7 @@ function Tile({ project, className = '', aspect = 'aspect-square', fill = false,
             />
           )}
         </div>
-        <div className="mt-2.5 text-[12px] text-ink group-hover:text-[#0066cc] transition-colors">
+        <div className="mt-2.5 text-[12px] text-ink group-hover:text-[#d70015] transition-colors">
           {hv?.label || project.name}
         </div>
       </Link>
@@ -124,7 +124,7 @@ export default function Hero() {
           >
             {h.h1a} {h.h1b}
             <br className="hidden sm:block" />{' '}
-            <span className="bg-gradient-to-r from-[#0071e3] via-[#2997ff] to-[#24a1db] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#e3000f] via-[#ff453a] to-[#24a1db] bg-clip-text text-transparent">
               {h.h1c}
             </span>
           </motion.h1>

@@ -109,7 +109,7 @@ export default function ProjectDetail() {
     : "cursor-pointer";
 
   const desktopGroupHoverText = !isMobile
-    ? "group-hover:text-[#0066cc] transition-colors"
+    ? "group-hover:text-[#d70015] transition-colors"
     : "";
 
 
@@ -236,8 +236,8 @@ export default function ProjectDetail() {
       {/* Sample / concept note */}
       {project.note && (
         <section className="wrap mb-6 md:mb-8">
-          <div className="rounded-[24px] bg-[#0071e3]/[0.06] ring-1 ring-[#0071e3]/15 px-6 py-5 md:px-8 md:py-6 flex gap-4 items-start">
-            <span className="mt-0.5 shrink-0 w-8 h-8 rounded-full bg-[#0071e3] text-white flex items-center justify-center">
+          <div className="rounded-[24px] bg-[#e3000f]/[0.06] ring-1 ring-[#e3000f]/15 px-6 py-5 md:px-8 md:py-6 flex gap-4 items-start">
+            <span className="mt-0.5 shrink-0 w-8 h-8 rounded-full bg-[#e3000f] text-white flex items-center justify-center">
               <Info className="w-4 h-4" />
             </span>
             <div>
@@ -268,7 +268,7 @@ export default function ProjectDetail() {
             { k: pd.solution, h: pd.solutionHeading, txt: project.solution },
           ].map((b, i) => (
             <motion.div key={b.k} {...reveal(i * 0.08)} className="bg-canvas-2 rounded-[28px] p-8 md:p-12">
-              <div className="text-[14px] font-semibold text-[#0071e3] mb-3">{b.k}</div>
+              <div className="text-[14px] font-semibold text-[#e3000f] mb-3">{b.k}</div>
               <h2 className="font-heading font-semibold text-[28px] md:text-[32px] leading-[1.12] tracking-[-0.025em] text-ink mb-4">{b.h}</h2>
               <p className="text-[17px] leading-[1.5] text-ink-2">{b.txt}</p>
             </motion.div>
@@ -324,7 +324,7 @@ export default function ProjectDetail() {
             <ul className="space-y-3">
               {project.results.map((result, i) => (
                 <li key={i} className="flex items-start gap-3 bg-white rounded-[20px] px-6 py-5">
-                  <span className="mt-0.5 w-5 h-5 rounded-full bg-[#0071e3] flex items-center justify-center shrink-0">
+                  <span className="mt-0.5 w-5 h-5 rounded-full bg-[#e3000f] flex items-center justify-center shrink-0">
                     <Check className="w-3 h-3 text-white" strokeWidth={3} />
                   </span>
                   <span className="text-[17px] font-semibold text-ink leading-snug">{result}</span>
@@ -342,7 +342,7 @@ export default function ProjectDetail() {
             <div className="text-[12px] font-semibold text-ink-2 mb-4">{pd.servicesUsed}</div>
             <div className="flex flex-wrap gap-2">
               {project.services.map((s) => (
-                <span key={s} className="text-[14px] px-4 py-2 rounded-full bg-[#0071e3]/10 text-[#0066cc]">{s}</span>
+                <span key={s} className="text-[14px] px-4 py-2 rounded-full bg-[#e3000f]/10 text-[#d70015]">{s}</span>
               ))}
             </div>
           </div>

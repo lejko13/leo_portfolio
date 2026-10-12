@@ -21,9 +21,9 @@ select {
     --canvas: #ffffff;
     --canvas-2: #f5f5f7;
     --line: #d2d2d7;
-    --link: #0066cc;
-    --action: #0071e3;
-    --action-hover: #0077ed;
+    --link: #d70015;
+    --action: #e3000f;
+    --action-hover: #f01a28;
 
     --background: 0 0% 100%;
     --foreground: 240 3% 12%;
@@ -31,31 +31,31 @@ select {
     --card-foreground: 240 3% 12%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 3% 12%;
-    --primary: 211 100% 45%;
+    --primary: 356 100% 45%;
     --primary-foreground: 0 0% 100%;
     --secondary: 240 11% 96%;
     --secondary-foreground: 240 3% 12%;
     --muted: 240 11% 96%;
     --muted-foreground: 240 2% 44%;
-    --accent: 211 100% 45%;
+    --accent: 356 100% 45%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 240 6% 84%;
     --input: 240 6% 84%;
-    --ring: 211 100% 45%;
+    --ring: 356 100% 45%;
     --radius: 0.75rem;
 
     --sidebar-background: 240 11% 96%;
     --sidebar-foreground: 240 3% 12%;
-    --sidebar-primary: 211 100% 45%;
+    --sidebar-primary: 356 100% 45%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 240 11% 92%;
     --sidebar-accent-foreground: 240 3% 12%;
     --sidebar-border: 240 6% 84%;
-    --sidebar-ring: 211 100% 45%;
+    --sidebar-ring: 356 100% 45%;
 
-    --chart-1: 211 100% 45%;
+    --chart-1: 356 100% 45%;
     --chart-2: 160 60% 45%;
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;

@@ -55,7 +55,7 @@ export default function Process() {
                         className="overflow-hidden"
                       >
                         <div className="pb-5">
-                          <div className="text-[13px] font-semibold text-[#0071e3] mb-2">{step.duration}</div>
+                          <div className="text-[13px] font-semibold text-[#e3000f] mb-2">{step.duration}</div>
                           <p className="text-[15px] leading-[1.5] text-ink-2">{step.desc}</p>
 
                           {/* outputs inline on mobile/tablet */}
@@ -108,7 +108,7 @@ export default function Process() {
                     <div className="grid grid-cols-2 gap-x-6 gap-y-2.5">
                       {current.outputs.map((output) => (
                         <div key={output} className="flex items-center gap-2.5">
-                          <span className="w-5 h-5 rounded-full bg-[#0071e3] flex items-center justify-center shrink-0">
+                          <span className="w-5 h-5 rounded-full bg-[#e3000f] flex items-center justify-center shrink-0">
                             <Check className="w-3 h-3 text-white" strokeWidth={3} />
                           </span>
                           <span className="text-[15px] text-ink">{output}</span>
