@@ -124,7 +124,7 @@ export default function Hero() {
           >
             {h.h1a} {h.h1b}
             <br className="hidden sm:block" />{' '}
-            <span className="bg-gradient-to-r from-[#000000] via-[#555555] to-[#24a1db] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#000000] via-[#333333] to-[#555555] bg-clip-text text-transparent">
               {h.h1c}
             </span>
           </motion.h1>
