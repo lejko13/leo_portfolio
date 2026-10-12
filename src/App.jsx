@@ -1,6 +1,5 @@
 import { Toaster } from "@/components/ui/toaster"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 import { LangProvider } from './lib/LangContext';
 import Home from './pages/Home';
 import { lazy, Suspense } from 'react';
@@ -24,7 +23,7 @@ function ScrollToTop() {
   return null;
 }
 
-const AuthenticatedApp = () => {
+const AppRoutes = () => {
 
  
   return (
@@ -49,7 +48,7 @@ function App() {
       <LangProvider>
           <Router>
             <ScrollToTop />
-            <AuthenticatedApp />
+            <AppRoutes />
           </Router>
           <Toaster />
       </LangProvider>
