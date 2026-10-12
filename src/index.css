@@ -1,0 +1,251 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input,
+textarea,
+select {
+  font-size: 16px !important;
+}
+
+@layer base {
+  :root {
+    /* Apple-like system stack: SF Pro on Apple devices, Inter elsewhere */
+    --font-heading: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    --font-body: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', 'Helvetica Neue', Arial, sans-serif;
+
+    --ink: #1d1d1f;
+    --ink-2: #6e6e73;
+    --ink-3: #86868b;
+    --canvas: #ffffff;
+    --canvas-2: #f5f5f7;
+    --line: #d2d2d7;
+    --link: #0066cc;
+    --action: #0071e3;
+    --action-hover: #0077ed;
+
+    --background: 0 0% 100%;
+    --foreground: 240 3% 12%;
+    --card: 240 11% 96%;
+    --card-foreground: 240 3% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 3% 12%;
+    --primary: 211 100% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 11% 96%;
+    --secondary-foreground: 240 3% 12%;
+    --muted: 240 11% 96%;
+    --muted-foreground: 240 2% 44%;
+    --accent: 211 100% 45%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 6% 84%;
+    --input: 240 6% 84%;
+    --ring: 211 100% 45%;
+    --radius: 0.75rem;
+
+    --sidebar-background: 240 11% 96%;
+    --sidebar-foreground: 240 3% 12%;
+    --sidebar-primary: 211 100% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 11% 92%;
+    --sidebar-accent-foreground: 240 3% 12%;
+    --sidebar-border: 240 6% 84%;
+    --sidebar-ring: 211 100% 45%;
+
+    --chart-1: 211 100% 45%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background-color: #ffffff;
+    color: var(--ink);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+    letter-spacing: -0.01em;
+  }
+
+  ::selection {
+    background: rgba(0, 113, 227, 0.18);
+    color: var(--ink);
+  }
+}
+
+@layer components {
+  /* Page container — Apple content width */
+  .wrap {
+    @apply mx-auto w-full max-w-[1180px] px-5 sm:px-8;
+  }
+
+  /* Section headline: "Lern das iPhone kennen." */
+  .h-section {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: clamp(32px, 4.4vw, 52px);
+    line-height: 1.06;
+    letter-spacing: -0.028em;
+    color: var(--ink);
+  }
+
+  .h-display {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: clamp(44px, 7vw, 88px);
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+    color: var(--ink);
+  }
+
+  .eyebrow {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0;
+    color: var(--ink-2);
+  }
+
+  /* Pill buttons */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-1.5 rounded-full px-[22px] py-[11px] text-[15px] font-normal text-white transition-colors duration-200;
+    background-color: var(--action);
+  }
+  .btn-primary:hover {
+    background-color: var(--action-hover);
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-1.5 rounded-full border px-[22px] py-[10px] text-[15px] font-normal transition-colors duration-200;
+    border-color: var(--action);
+    color: var(--action);
+  }
+  .btn-secondary:hover {
+    background-color: var(--action);
+    color: #fff;
+  }
+
+  .btn-dark {
+    @apply inline-flex items-center justify-center gap-1.5 rounded-full px-[22px] py-[11px] text-[15px] font-normal text-white transition-colors duration-200;
+    background-color: var(--ink);
+  }
+  .btn-dark:hover {
+    background-color: #000;
+  }
+
+  /* "Mehr erfahren ›" text links */
+  .link-more {
+    @apply inline-flex items-center gap-0.5 text-[15px] transition-colors;
+    color: var(--link);
+  }
+  .link-more:hover {
+    text-decoration: underline;
+  }
+
+  /* Small round carousel arrows (gray) */
+  .nav-dot {
+    @apply flex h-9 w-9 items-center justify-center rounded-full transition-colors duration-200 disabled:cursor-default disabled:opacity-40;
+    background-color: rgba(210, 210, 215, 0.64);
+    color: rgba(0, 0, 0, 0.56);
+  }
+  .nav-dot:not(:disabled):hover {
+    background-color: rgba(223, 223, 227, 0.9);
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Round "+" on cards */
+  .plus-btn {
+    @apply flex h-9 w-9 items-center justify-center rounded-full transition-transform duration-300;
+  }
+
+  .card {
+    @apply rounded-[28px] overflow-hidden;
+  }
+
+  /* Segmented / pill filters */
+  .chip {
+    @apply rounded-full px-4 py-[7px] text-[14px] transition-colors duration-200;
+  }
+  .chip-on {
+    background-color: var(--ink);
+    color: #fff;
+  }
+  .chip-off {
+    background-color: transparent;
+    color: var(--ink);
+  }
+  .chip-off:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  /* Form fields */
+  .field {
+    @apply w-full rounded-xl border bg-white px-4 py-3.5 text-[17px] outline-none transition-[border-color,box-shadow] duration-200;
+    border-color: var(--line);
+    color: var(--ink);
+  }
+  .field::placeholder {
+    color: var(--ink-3);
+  }
+  .field:focus {
+    border-color: var(--action);
+    box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.15);
+  }
+}
+
+@layer utilities {
+  .text-ink { color: var(--ink); }
+  .text-ink-2 { color: var(--ink-2); }
+  .text-ink-3 { color: var(--ink-3); }
+  .text-link { color: var(--link); }
+  .bg-canvas-2 { background-color: var(--canvas-2); }
+  .bg-ink { background-color: var(--ink); }
+  .border-line { border-color: var(--line); }
+
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+
+  /* kept for legacy UI components */
+  .glow-blue-sm { box-shadow: none; }
+
+  .card-lift {
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), box-shadow 0.4s;
+  }
+  .card-lift:hover {
+    transform: scale(1.012);
+    box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.12);
+  }
+}
+
+:root {
+  --shelf-pad: max(20px, calc((100vw - 1180px) / 2 + 20px));
+}
+@media (min-width: 640px) {
+  :root {
+    --shelf-pad: max(32px, calc((100vw - 1180px) / 2 + 32px));
+  }
+}
