@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Instagram, CheckCircle2, ChevronRight } from 'lucide-react';
+import { Mail, CheckCircle2, ChevronRight } from 'lucide-react';
 import { sc, openMail } from '../../lib/utils';
 import emailjs from '@emailjs/browser';
 import { useLang } from '../../lib/LangContext';
@@ -102,16 +102,6 @@ export default function CTASection() {
               <span className="flex-1">
                 <span className="block text-[12px] text-ink-2">E-mail</span>
                 <span className="block text-[17px] text-ink">leo.fudaly@gmail.com</span>
-              </span>
-              <ChevronRight className="w-4 h-4 text-ink-3 group-hover:translate-x-0.5 transition-transform" />
-            </a>
-            <a href="https://www.instagram.com/leofudaly/" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4 px-6 py-5 hover:bg-black/[0.02] transition-colors">
-              <span className="w-10 h-10 rounded-full bg-canvas-2 flex items-center justify-center text-ink">
-                <Instagram className="w-[18px] h-[18px]" strokeWidth={1.8} />
-              </span>
-              <span className="flex-1">
-                <span className="block text-[12px] text-ink-2">Instagram</span>
-                <span className="block text-[17px] text-ink">@leofudaly</span>
               </span>
               <ChevronRight className="w-4 h-4 text-ink-3 group-hover:translate-x-0.5 transition-transform" />
             </a>

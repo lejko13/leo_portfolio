@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import { useLang } from '../../lib/LangContext';
 import { getServices } from '../../lib/servicesData';
 import { Link } from 'react-router-dom';
@@ -47,11 +47,6 @@ export default function Footer() {
                 <li>
                   <a href="mailto:leo.fudaly@gmail.com" className={`${linkCls} inline-flex items-center gap-1.5`}>
                     <Mail className="w-3.5 h-3.5" /> Leo.fudaly@gmail.com
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/leofudaly/" target="_blank" rel="noopener noreferrer" className={`${linkCls} inline-flex items-center gap-1.5`}>
-                    <Instagram className="w-3.5 h-3.5" /> Instagram
                   </a>
                 </li>
               </ul>
