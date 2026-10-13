@@ -895,6 +895,53 @@ website: 'https://left-champagne-285439.framer.app/cennik21',
     'Celé video som poskladal z AI generovaných scén a 3D modelov iPhonov. Doplnil som motion grafiku vo farbách značky, typografiu, hudbu a zvukové efekty. Pripravil som dve verzie, 9:16 pre sociálne siete a 16:9 pre YouTube a web. Pre firmu to znamená reklamu rýchlejšie a lacnejšie ako pri klasickom natáčaní.',
 },
 
+// subway – video reklama
+{
+  id: 'subway-reklama',
+  name: 'Subway – Ukážka reklamy',
+  year: '2026',
+
+  tags: ['Video', 'Reklamy'],
+
+  image: '/project/video/subway/reklama.jpg',
+
+  gallery: [
+    '/project/video/subway/reklama.mp4',
+  ],
+
+  url: 'https://www.subway.com/sk-SK',
+  client: 'Subway (ukážka, nie zákazka)',
+
+  tech: ['AI video', 'After Effects', 'Premiere Pro'],
+
+  services: ['Koncept a scenár reklamy', 'UI animácia objednávky', 'AI generované scény', 'Motion grafika', 'Strih a zvuk'],
+
+  process: 'Výber značky a produktu → Hook a scenár → Návrh UI objednávky → AI generovanie scén → Motion grafika a typografia → Strih, zvuk a export vo formáte 9:16',
+
+  results: [
+    'Vertikálna reklama 9:16 pre Reels, Stories a TikTok',
+    'Celá objednávka v jednom videu – výber subu, prílohy, veľkosť, cookies a najbližšia prevádzka na mape',
+    'Hook „Dobrý deň. Na čo máš chuť?“ hneď v prvej sekunde',
+    'Akcia „Sub of the Day“ s cenou, ktorá dáva dôvod prísť ešte dnes',
+    'Záver s claimom „Presne podľa teba.“',
+  ],
+
+  duration: '1 týždeň',
+
+  category: 'Video / Reklamy (ukážka)',
+
+  desc: 'Ukážková reklama pre značku Subway, ktorá ukazuje celú objednávku krok za krokom – od výberu subu až po najbližšiu prevádzku. Video je vo vertikálnom formáte pre sociálne siete.',
+
+  note:
+    'Túto reklamu som vytvoril z vlastnej iniciatívy ako ukážku svojej práce. Je fiktívna: nevznikla na objednávku značky Subway a zatiaľ nebola použitá v žiadnej reálnej kampani. Vo videu nie je ani jeden natočený záber, všetky scény sú vytvorené pomocou AI a motion grafiky.',
+
+  challenge:
+    'Chcel som ukázať, ako sa dá v krátkom videu predať nielen produkt, ale celý zážitok z objednávky. Tak, aby divák za pár sekúnd videl, že si sub poskladá presne podľa seba, a hneď vedel, kde je najbližší Subway.',
+
+  solution:
+    'Navrhol som jednoduché UI objednávky vo farbách značky a rozanimoval ho krok za krokom: výber subu, prílohy, veľkosť, cookies a mapa s prevádzkami. Doplnil som AI generované zábery prevádzok, typografiu, hudbu a zvukové efekty. Pre firmu to znamená reklamu bez natáčania, rýchlejšie a lacnejšie ako pri klasickej produkcii.',
+},
+
 // belanske stavebniny – video reklamy
 {
   id: 'belanske-stavebniny',

@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "oliverkorbas-web",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "../oliverkorbas-rebuild", "run", "dev", "--", "--port", "3100"],
+      "port": 3100
+    }
+  ]
+}
