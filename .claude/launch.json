@@ -4,8 +4,42 @@
     {
       "name": "oliverkorbas-web",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["--prefix", "../oliverkorbas-rebuild", "run", "dev", "--", "--port", "3100"],
+      "runtimeArgs": [
+        "--prefix",
+        "../oliverkorbas-rebuild",
+        "run",
+        "dev",
+        "--",
+        "--port",
+        "3100"
+      ],
       "port": 3100
+    },
+    {
+      "name": "ejajads",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "../ejajads",
+        "run",
+        "dev",
+        "--",
+        "--port",
+        "5180"
+      ],
+      "port": 5180
+    },
+    {
+      "name": "leo-portfolio",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--",
+        "--port",
+        "5190"
+      ],
+      "port": 5190
     }
   ]
 }

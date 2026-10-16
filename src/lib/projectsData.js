@@ -942,6 +942,96 @@ website: 'https://left-champagne-285439.framer.app/cennik21',
     'Navrhol som jednoduché UI objednávky vo farbách značky a rozanimoval ho krok za krokom: výber subu, prílohy, veľkosť, cookies a mapa s prevádzkami. Doplnil som AI generované zábery prevádzok, typografiu, hudbu a zvukové efekty. Pre firmu to znamená reklamu bez natáčania, rýchlejšie a lacnejšie ako pri klasickej produkcii.',
 },
 
+// nosleephouse – video reklama „Diagnóza webu“
+{
+  id: 'nosleephouse-reklama',
+  name: 'nosleephouse – Diagnóza webu',
+  year: '2026',
+
+  tags: ['Video', 'Reklamy'],
+
+  image: '/project/video/nosleephouse/reklama.jpg',
+
+  gallery: [
+    '/project/video/nosleephouse/reklama.mp4',
+    '/project/video/nosleephouse/reklama-sk.mp4',
+    '/project/video/nosleephouse/reklama-sk-cierna.mp4',
+  ],
+
+  url: 'https://nosleephouse.cz',
+  client: 'nosleephouse – webové štúdio (CZ)',
+
+  tech: ['3D modely (iPhone, MacBook)', 'Kódová animácia', 'AI hlas (ElevenLabs)', 'Motion grafika'],
+
+  services: ['Koncept a scenár reklamy', '3D animácia zariadení', 'Motion grafika a typografia', 'Český a slovenský voiceover', 'Zvuk a mix'],
+
+  process: 'Hook a scenár → Snímky starého a nového webu → 3D scéna s iPhonom a MacBookom → Animácia skóre webu a štítkov → AI voiceover (CZ / SK) → Zvukové efekty, mix a export vo formáte 9:16 vo viacerých verziách',
+
+  results: [
+    'Tri verzie vertikálnej reklamy 9:16 pre Reels, Stories a TikTok – svetlá s českým hlasom, tmavá a čierna so slovenským hlasom',
+    'Hook „Máte web, ale klienti nechodí?“ hneď v prvej sekunde',
+    '„Diagnóza webu“ – skóre klesá s každým problémom: Google, AI, texty, chýbajúce tlačidlo',
+    'Reálne porovnanie starého a nového webu na dvoch rôznych projektoch – napr. načítanie 5,0 s vs. 0,2 s',
+    'Záver s jasnou výzvou na bezplatný strategický hovor',
+  ],
+
+  duration: '1 týždeň',
+
+  category: 'Video / Reklamy',
+
+  desc: 'Reklama pre webové štúdio nosleephouse, ktorá za necelých 25 sekúnd urobí „diagnózu“ webu – ukáže, prečo starý web neprináša klientov, a ako to vyrieši nový. Pripravená vo viacerých verziách – svetlej aj tmavej, s českým aj slovenským hlasom.',
+
+  challenge:
+    'Vysvetliť majiteľovi firmy za pár sekúnd, prečo mu web neprináša klientov – bez technických pojmov, tak, aby sa v tom spoznal a chcel to riešiť.',
+
+  solution:
+    'Postavil som reklamu ako „diagnózu“: skóre webu postupne klesá s každým problémom (Google, AI, texty, tlačidlo, rýchlosť) a potom vyskočí po redizajne. Všetko sa odohráva na 3D modeloch iPhonu a MacBooku s reálnymi snímkami starého a nového webu. Doplnil som AI voiceover v češtine aj slovenčine, zvukové efekty a výrazný záver s výzvou k akcii. Reklamu som pripravil vo svetlej aj tmavej verzii, aby sa dala testovať v kampaniach.',
+},
+
+// noflex – AI videá (street interview + animovaný príbeh)
+{
+  id: 'noflex',
+  name: 'NOFLEX – AI videá',
+  year: '2026',
+
+  tags: ['Video', 'Reklamy'],
+
+  image: '/project/video/noflex/rozhovor.jpg',
+
+  gallery: [
+    '/project/video/noflex/rozhovor.mp4',
+    '/project/video/noflex/pribeh.mp4',
+  ],
+
+  client: 'NOFLEX',
+
+  tech: ['AI video', 'AI hlas', 'Premiere Pro', 'Titulky slovo po slove'],
+
+  services: ['Koncept a scenár', 'AI generované postavy a scény', 'Dabing a hlasy', 'Strih a zvuk', 'Titulky'],
+
+  process: 'Námet a scenár → AI generovanie postáv a scén → Hlasy a dialógy → Strih, hudba a zvukové efekty → Titulky slovo po slove → Export vo formáte 9:16',
+
+  results: [
+    'Dve vertikálne videá 9:16 pre Reels, TikTok a Stories',
+    'AI street interview – NOFLEX sa pýta Juraja, zakladateľa Different Studio, na jeho prvý popup',
+    'Animovaný príbeh v štýle 3D animáku – od „Koľko ešte?“ po „Wow, ono naozaj funguje!“',
+    '100 % bez natáčania – postavy, prostredie aj hlasy sú vytvorené pomocou AI',
+    'Titulky slovo po slove, aby video fungovalo aj bez zvuku',
+  ],
+
+  duration: '1 týždeň',
+
+  category: 'Video / AI videá',
+
+  desc: 'Dve AI videá vo vertikálnom formáte – street interview v obchode s oblečením a animovaný príbeh v štýle 3D animáku. Bez kamery, bez herca, bez štábu.',
+
+  challenge:
+    'Ukázať, že formáty, ktoré na sociálnych sieťach fungujú najlepšie – rozhovor na ulici a krátky príbeh s pointou – sa dajú vyrobiť úplne bez natáčania a stále pôsobia živo a uveriteľne.',
+
+  solution:
+    'Pre NOFLEX som pripravil street interview v popup obchode, kde sa moderátor pýta zakladateľa Different Studio na jeho prvý popup. Druhé video je animovaný príbeh s jasnou pointou. Všetky postavy, scény aj hlasy sú vytvorené pomocou AI, doplnil som strih, zvuk a titulky slovo po slove.',
+},
+
 // belanske stavebniny – video reklamy
 {
   id: 'belanske-stavebniny',
